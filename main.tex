@@ -1,0 +1,213 @@
+% a mashup of hipstercv, friggeri and twenty cv
+% https://www.latextemplates.com/template/twenty-seconds-resumecv
+% https://www.latextemplates.com/template/friggeri-resume-cv
+
+\documentclass[lighthipster]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+% withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+\usepackage{verbatim}
+
+
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------
+\title{Rahul Rameshbabu CV}
+\author{Rahul Rameshbabu}
+\date{June 2023}
+
+\pagestyle{empty}
+\begin{document}
+
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+\section*{Start}
+
+\simpleheader{headercolour}{Rahul}{Rameshbabu}{\faLinux ~ Linux Kernel Developer ~•~ \color{cvgreen} \faGamepad \color{white} ~ hid-nvidia-shield Author~/~Maintainer}{white}
+
+
+
+%------------------------------------------------
+
+% this has to be here so the paracols starts..
+\subsection*{}
+\vspace{4em}
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.23}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+
+\paracolbackgroundoptions
+
+% 0.9,0.9,0.9 -- 0.8,0.8,0.8
+
+
+\footnotesize
+{\setasidefontcolour
+\flushright
+\begin{center}
+    \rectpic{rahul_real.jpg}
+\end{center}
+
+\bg{cvgreen}{white}{About me}\\[0.5em]
+
+{\footnotesize
+Open system enthusiast with a passion for personal computing.
+HID devices, graphics, and computer architecture all interest me,
+especially when applicable to end users. I got into operating system
+design and programming due to my personal passion for computers.
+}
+\bigskip
+
+\bg{cvgreen}{white}{personal} \\[0.5em]
+
+\cvpersonal{dev distro}{NixOS}{nixos.png}
+
+\cvpersonal{test distro}{Arch Linux}{archlinux.png}
+
+\cvpersonal{editor}{spacemacs}{spacemacs.png}
+
+fighting game: BlazBlue
+
+visual novel: White Album 2
+
+birthday: May 15, 1998
+
+\bigskip
+
+\bg{cvgreen}{white}{Areas of specialization} \\[0.5em]
+
+Linux Kernel ~•~ Hardware Interfacing ~•~ UNIX Userspace Coding
+
+\bigskip
+
+
+
+\bigskip
+
+\bg{cvgreen}{white}{Interests}\\[0.5em]
+
+Improving interaction between humans and computers for activities like gaming on open platforms.
+\bigskip
+
+\bg{cvgreen}{white}{Interests}\\[0.5em]
+
+\texttt{Linux Kernel} ~/~ \texttt{HID} ~/~ \texttt{BPF}
+\texttt{Desktop Env. Programming}
+
+\vspace{4em}
+
+\flushleft
+\infobubble{\faAt}{cvgreen}{white}{\href{mailto:sergeantsagara@protonmail.com}{sergeantsagara@protonmail.com}}
+\infobubble{\faIcon{comment-alt}}{cvgreen}{white}{\href{https://matrix.to/\#/@binary-eater:beater.town}{@binary-eater:beater.town}}
+\infobubble{\faGlobe}{cvgreen}{white}{\href{https://binary-eater.github.io}{binary-eater.github.io}}
+\infobubble{\faGithub}{cvgreen}{white}{\href{https://github.com/Binary-Eater}{Binary-Eater}}
+\infobubble{\faDiscord}{cvgreen}{white}{rahulr2}
+
+\phantom{turn the page}
+
+\phantom{turn the page}
+}
+%-----------------------------------------------------------
+\switchcolumn
+
+\small
+\section*{Open Source}
+
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvachieve{2022--Present}{hid-nvidia-shield Linux Kernel Module}{Original Author ~/~ Maintainer}{Started working on this kernel module when I realized haptics on my 2017 NVIDIA SHIELD controller did not work while I was playing BlazBlue on Linux. My opinion was that the hardware my company makes should have a great out of box experience on Linux. It took me a year to go through the legal process at NVIDIA to get this upstreamed. Landing in kernel 6.5 is support for haptics, LED control, and Android media key mapping to Linux input events. Landing in kernel 6.6 is support for battery information.}{tux.png} \\
+    \cvevent{late 2022--2023}{KDE ~/~ plasma-nm}{Minor Contributor}{Openconnect VPN SSO Support}{Added support for a new authentication mechanism for Openconnect VPN in plasma-nm using QtWebEngine and QtDesktopServices.}{kde.png} \\
+    \cvevent{Misc.}{NixOS ~/~ nixpkgs}{Minor Contributor}{Package Enhancements}{Enhanced Nix expressions for nvidia-x11 and openconnect packaging in the past.}{nixos.png}
+\end{tabular}
+\vspace{1em}
+
+\begin{minipage}[t]{0.45\textwidth}
+\section*{Education}
+\begin{tabular}{r p{0.6\textwidth} c}
+    \cvdegree{2016--2019}{Computer Engineering}{B.S.}{University of Illinois Urbana-Champaign \color{cvgreen}}{}{uiuc_i.jpg}
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.25\textwidth}
+\section*{Programming}
+\begin{tabular}{r @{\hspace{0.5em}}l}
+     \bg{skilllabelcolour}{iconcolour}{Kernel Dev.} & \barrule{0.55}{0.5em}{cvgreen} \\
+     \bg{skilllabelcolour}{iconcolour}{Misc.} & \barrule{0.35}{0.5em}{cvorange} \\
+     \bg{skilllabelcolour}{iconcolour}{\LaTeX} & \barrule{0.15}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{C} &  \barrule{0.55}{0.5em}{cvgreen}
+\end{tabular}
+\end{minipage}
+
+\section*{Work Experience}
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2022--Present}{Linux Kernel Contributor}{NVIDIA}{Santa Clara, CA \color{cvgreen} ~\faMapMarker}{Work on Precision Time Protocol support in upstream mlx5\_core network device driver. Contribute to the core Precision Time Protocol stack in the Linux kernel space and defacto Linux userspace component.}{nvidia.png} \\
+    \cvevent{2019--2022}{Systems Software Architect}{NVIDIA}{Santa Clara, CA \color{cvgreen} ~\faMapMarker}{Developed tooling to improve chip design test coverage analysis.}{nvidia.png}
+\end{tabular}
+\vspace{1em}
+
+\section*{News}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.55\textwidth}}
+    June 2023 & Phoronix: NVIDIA SHIELD Controller Driver, Xbox Rumble Support For Linux 6.5 \newline ref: \href{https://www.phoronix.com/news/Linux-6.5-HID}{https://www.phoronix.com/news/Linux-6.5-HID} \newline
+                Phoronix: NVIDIA SHIELD Controller Driver Coming With Linux 6.5 \newline ref: \href{https://www.phoronix.com/news/NVIDIA-SHIELD-HID-Driver}{https://www.phoronix.com/news/NVIDIA-SHIELD-HID-Driver} \\
+    April 2023 & Phoronix: NVIDIA Finally Working On A Linux Driver For Their 2017 SHIELD Controller \newline ref: \href{https://www.phoronix.com/news/NVIDIA-SHIELD-Controller-Linux}{https://www.phoronix.com/news/NVIDIA-SHIELD-Controller-Linux}
+\end{tabular}
+\bigskip
+
+\begin{comment}
+\section*{Languages}
+\begin{tabular}{l | ll}
+\textbf{English} & C2 & {\phantom{x}\footnotesize mother tongue} \\
+\textbf{Japanese} & A1 & \pictofraction{\faCircle}{cvred}{1}{black!30}{3}{\tiny}
+\end{tabular}
+\end{comment}
+\bigskip
+
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\begin{comment}
+\section*{Publications}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.7\textwidth}}
+    1729 & \emph{How I almost got killed by Lady Swan}, Tortuga Printing Press. \\
+    1720 & ``Privateering for Beginners'', in: \emph{The Pragmatic Pirate} (1/1720).
+\end{tabular}
+\end{comment}
+\bigskip
+\begin{comment}
+\section*{Talks}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.6\textwidth}}
+    Nov. 1726 & ``How I lost my ship (\& and how to get it back)'', at: \emph{Annual Pirate's Conference} in Tortuga, Nov. 1726.
+\end{tabular}
+\end{comment}
+\end{minipage}
+
+
+
+
+
+
+\vfill{} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+\setlength{\parindent}{0pt}
+\begin{minipage}[t]{\rightcolwidth}
+\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+{\small \icon{\faEnvelope}{cvgreen}{} 123 Default Street \icon{\faMapMarker}{cvgreen}{} Placeholder, NA 12345 \icon{\faPhone}{cvgreen}{} +0 (000) 000-0000 \newline\icon{\faAt}{cvgreen}{} \protect\url{sergeantsagara@protonmail.com}
+}
+\end{center}
+\end{minipage}
+
+\end{paracol}
+
+\end{document}

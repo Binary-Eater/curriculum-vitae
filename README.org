@@ -1,0 +1,44 @@
+* Rahul Rameshbabu's CV
+
+[[https://develop.spacemacs.org][file:https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg]]
+
+** Attributions and Licensing
+
+This CV is licensed under a Creative Commons
+Attribution-NonCommercial-ShareAlike 4.0 International License. This is the same
+license that is used for the [[https://github.com/latex-ninja/simple-hipstercv][simple-hipstercv LaTeX template]] made by Sarah Yang,
+known as [[https://github.com/latex-ninja][latex-ninja]] on GitHub. She also has a [[https://latex-ninja.com/][blog]] for those interested in
+following her activities. I used her template with a couple of modifications.
+
+I changed the layout with the following modifications.
+
++ Removed Languages, Certificates & Grants, Publications, and Talks sections
++ Removed address footer
++ Converted Short Resume section to an Open Source section
++ Converted Curriculum section to a Work Experience section
++ Inserted a News section
++ Changed picture to a rectangular bounding instead of circular bounding
+
+I changed the color scheme accent color from its original cyan to a green color
+reminiscent of the color used by my current employer. Applied actual content
+over the initial CV template. I originally started this CV in Overleaf, which is
+why the repository is not a direct fork of the original CV template repository.
+
+** Why I open sourced my CV?
+
+There are two main reasons why I wanted to open source my CV.
+
++ It serves as a way to practice LaTeX. I tend to do more clean up when there is
+  public visibility.
++ Makes for a good summary of what I have been doing for fellow contributors I
+  have worked with over the years.
+
+I did not open source my CV to solicit job offers and am not looking for any
+opportunities. It mainly serves as a summary of who I am, a reminder of what I
+have done so far, and a guide post for what I need to do next.
+
+** Where can you find released copies of my CV?
+
+Released copies generated from my CV's source code can be found in the project's
+[[https://github.com/Binary-Eater/curriculum-vitae/releases][releases page]]. I use Xu Cheng's [[https://github.com/xu-cheng/latex-action][latex-action]] GitHub Action to simmplify the
+automation.
