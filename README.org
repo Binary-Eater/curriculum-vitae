@@ -40,5 +40,5 @@ have done so far, and a guide post for what I need to do next.
 ** Where can you find released copies of my CV?
 
 Released copies generated from my CV's source code can be found in the project's
-[[https://github.com/Binary-Eater/curriculum-vitae/releases][releases page]]. I use Xu Cheng's [[https://github.com/xu-cheng/latex-action][latex-action]] GitHub Action to simmplify the
+[[https://github.com/Binary-Eater/curriculum-vitae/releases][releases page]]. I use Xu Cheng's [[https://github.com/xu-cheng/latex-action][latex-action]] GitHub Action to simplify the
 automation.
