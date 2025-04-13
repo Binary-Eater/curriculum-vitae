@@ -32,7 +32,7 @@
 
 \section*{Start}
 
-\simpleheader{headercolour}{Rahul}{Rameshbabu}{\faLinux ~ Linux Graphics Developer ~•~ \color{cvgreen} \faGamepad \color{white} ~ hid-nvidia-shield Author~/~Maintainer}{white}
+\simpleheader{headercolour}{Rahul}{Rameshbabu}{\faLinux ~ Linux Graphics Developer ~ \color{cvgreen} \faGamepad}{white}
 
 
 
@@ -126,9 +126,9 @@ Improving interaction between humans and computers for activities like gaming on
 \section*{Open Source}
 
 \begin{tabular}{r| p{0.5\textwidth} c}
-    \cvachieve{2022--Present}{hid-nvidia-shield Linux Kernel Module}{Original Author ~/~ Maintainer}{Started working on this kernel module when I realized haptics on my 2017 NVIDIA SHIELD controller did not work while I was playing BlazBlue on Linux. My opinion was that the hardware my company makes should have a great out of box experience on Linux. It took me a year to go through the legal process at NVIDIA to get this upstreamed. Landing in kernel 6.5 is support for haptics, LED control, and Android media key mapping to Linux input events. Landing in kernel 6.6 is support for battery information.}{tux.png} \\
-    \cvachieve{2022--2024}{Linux Kernel NetDev Subsystem}{Contributor}{Details: \href{https://binary-eater.github.io/posts/job_change/}{https://binary-eater.github.io/posts/job\_change/}}{tux.png} \\
-    \cvevent{end of 2023}{linux-wireless b43 driver}{Bugfix}{QoS issue with bcm4331}{A casual linux kernel fix upstreamed to make QoS applications work correctly on my personal laptop as a relaxing way to spend my New Year's Eve. \newline ref: \href{https://binary-eater.github.io/posts/bcm4331_and_macbook_wifi_woes/}{https://binary-eater.github.io/posts/bcm4331\_and\_macbook\_wifi\_woes/}}{tux.png} \\
+    \cvachieve{2025--Present}{Rust Abstractions for HID Drivers and External Display Backlight Support n DRM}{Initial RFC}{\href{https://binary-eater.github.io/tags/usb-monitor-control/}{https://binary-eater.github.io/tags/usb-monitor-control/} \newline \href{https://lore.kernel.org/rust-for-linux/20250313160220.6410-2-sergeantsagara@protonmail.com/}{https://lore.kernel.org/rust-for-linux/20250313160220.6410-2-sergeantsagara@protonmail.com/}}{tux.png} \\
+    \cvachieve{2024}{Video Game DXVK Fix}{Bugfix}{Did binary analysis to debug White Album 2 game crash with DXVK when running the game through Proton. \newline \href{https://binary-eater.github.io/posts/white_album_2_proton/}{https://binary-eater.github.io/posts/white\_album\_2\_proton/}}{vulkan_dxvk.jpg} \\
+    \cvachieve{2022--Present}{hid-nvidia-shield Linux Kernel Module}{Original Author ~/~ Maintainer}{Started working on this kernel module when I realized haptics on my 2017 NVIDIA SHIELD controller did not work while I was playing BlazBlue on Linux.}{tux.png} \\
 \end{tabular}
 \vspace{1em}
 
@@ -142,7 +142,7 @@ Improving interaction between humans and computers for activities like gaming on
 \section*{Programming}
 \begin{tabular}{r @{\hspace{0.5em}}l}
      \bg{skilllabelcolour}{iconcolour}{Kernel Dev.} & \barrule{0.55}{0.5em}{cvgreen} \\
-     \bg{skilllabelcolour}{iconcolour}{Misc.} & \barrule{0.35}{0.5em}{cvorange} \\
+     \bg{skilllabelcolour}{iconcolour}{Rust} & \barrule{0.4}{0.5em}{cvgreen} \\
      \bg{skilllabelcolour}{iconcolour}{\LaTeX} & \barrule{0.15}{0.5em}{cvpurple} \\
      \bg{skilllabelcolour}{iconcolour}{C} &  \barrule{0.55}{0.5em}{cvgreen}
 \end{tabular}
@@ -150,13 +150,13 @@ Improving interaction between humans and computers for activities like gaming on
 
 \section*{Work Experience}
 \begin{tabular}{r| p{0.5\textwidth} c}
-    \cvevent{2024--Present}{Linux Graphics Developer}{NVIDIA}{Santa Clara, CA \color{cvgreen} ~\faMapMarker}{Working on NVIDIA's Linux Graphics driver stack focused on DRM/KMS, display servers, and compositors. Hoping to pick up OpenGL and Vulkan on the side.}{nvidia.png} \\
-    \cvevent{2022--2024}{Linux Kernel Contributor}{NVIDIA}{Santa Clara, CA \color{cvgreen} ~\faMapMarker}{Worked on Precision Time Protocol support, MACsec offload, and PSP security protocol in upstream mlx5\_core network device driver and upstream Linux kernel stack.}{nvidia.png} \\
+    \cvevent{2024--Present}{Linux Graphics Developer}{NVIDIA}{Santa Clara, CA \color{cvgreen} ~\faMapMarker}{Working on NVIDIA's Linux Graphics driver stack focused on DRM/KMS, display servers, and compositors. Address user related graphics problems on NVIDIA's forum and GitHub issue tracker while adding various features.}{nvidia.png} \\
+    \cvevent{2022--2024}{Linux Kernel Contributor}{NVIDIA}{Santa Clara, CA \color{cvgreen} ~\faMapMarker}{Worked on Precision Time Protocol support, MACsec offload, and PSP security protocol in upstream mlx5\_core network device driver and upstream Linux kernel stack. \newline Details: \href{https://binary-eater.github.io/posts/job_change/}{https://binary-eater.github.io/posts/job\_change/}}{nvidia.png} \\
 \end{tabular}
-\vspace{1em}
 
 \section*{News}
 \begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.55\textwidth}}
+    March 2025 & Phoronix: Linux Kernel's Rust Support Being Expanded To HID Drivers \newline ref: \href{https://www.phoronix.com/news/Linux-Rust-HID-Drivers-Patches}{https://www.phoronix.com/news/Linux-Rust-HID-Drivers-Patches} \\
     June 2023 & Phoronix: NVIDIA SHIELD Controller Driver, Xbox Rumble Support For Linux 6.5 \newline ref: \href{https://www.phoronix.com/news/Linux-6.5-HID}{https://www.phoronix.com/news/Linux-6.5-HID} \newline
                 Phoronix: NVIDIA SHIELD Controller Driver Coming With Linux 6.5 \newline ref: \href{https://www.phoronix.com/news/NVIDIA-SHIELD-HID-Driver}{https://www.phoronix.com/news/NVIDIA-SHIELD-HID-Driver} \\
     April 2023 & Phoronix: NVIDIA Finally Working On A Linux Driver For Their 2017 SHIELD Controller \newline ref: \href{https://www.phoronix.com/news/NVIDIA-SHIELD-Controller-Linux}{https://www.phoronix.com/news/NVIDIA-SHIELD-Controller-Linux}
